@@ -2,7 +2,7 @@
 
 A state-of-the-art handwriting synthesis model that generates realistic handwritten text in SVG vector format. The model uses a **Style-Disentangled Transformer** architecture that separates writer-wise and character-wise styles for high-quality, controllable handwriting generation.
 
-## 🎯 Features
+## Features
 
 - **Full-Page Handwriting Generation**: Generate complete letters, documents, or notes
 - **SVG Vector Output**: High-quality vector paths that scale perfectly
@@ -11,7 +11,7 @@ A state-of-the-art handwriting synthesis model that generates realistic handwrit
 - **Transformer Architecture**: Modern attention-based architecture for better quality
 - **Mixture Density Networks**: Gaussian Mixture Models for realistic stroke variation
 
-## 🏗️ Architecture
+## Architecture
 
 The model combines several state-of-the-art techniques from recent research:
 
@@ -58,7 +58,7 @@ This implementation is based on several influential papers:
    - Conditional handwriting synthesis with style/content disentanglement
    - ArXiv: [1801.08379](https://arxiv.org/abs/1801.08379)
 
-## 📦 Installation
+## Installation
 
 ```bash
 # Clone the repository
@@ -83,7 +83,7 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Training
 
@@ -163,7 +163,7 @@ from utils.svg_generator import create_svg
 create_svg([strokes[0].numpy()], 'output.svg')
 ```
 
-## 📊 Data Format
+## Data Format
 
 ### Training Data
 
@@ -205,7 +205,7 @@ prepare_iam_ondb_data(
 )
 ```
 
-## 🎨 Customization
+## Customization
 
 ### Model Parameters
 
@@ -233,7 +233,7 @@ python generate.py \
     --height 1000              # Canvas height
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 handwriting_synthesis/
@@ -253,7 +253,7 @@ handwriting_synthesis/
 └── requirements.txt          # Dependencies
 ```
 
-## 🧪 Example Outputs
+## Example Outputs
 
 ### Temperature Effects
 
@@ -270,7 +270,7 @@ handwriting_synthesis/
 4. **Assistive Technology**: Help people unable to write by hand
 5. **Data Augmentation**: Generate training data for handwriting recognition
 
-## 🔬 Technical Details
+## Technical Details
 
 ### Stroke Representation
 
@@ -296,7 +296,7 @@ Cumulative sum of displacements gives absolute positions for rendering.
 4. Convert strokes to SVG paths
 5. Optionally smooth and post-process
 
-## 🛠️ Advanced Usage
+## Advanced Usage
 
 ### Custom Style Encoder
 
@@ -326,7 +326,7 @@ additional_chars = ['你', '好', '世', '界']  # Chinese characters
 # Modify create_vocabulary() to include these
 ```
 
-## 📈 Performance Tips
+## Performance Tips
 
 1. **GPU Usage**: Use CUDA for 10-20x speedup during training
 2. **Batch Size**: Larger batches (32-64) for better gradient estimates
@@ -334,7 +334,7 @@ additional_chars = ['你', '好', '世', '界']  # Chinese characters
 4. **Sequence Length**: Longer sequences need more memory; adjust `max_seq_len`
 5. **Learning Rate**: Start with 1e-4, reduce if training is unstable
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -353,7 +353,7 @@ additional_chars = ['你', '好', '世', '界']  # Chinese characters
    - Increase style dimension: `--writer_style_dim 256`
    - Use more style samples: `--style_samples 10`
 
-## 📚 Citation
+## Citation
 
 If you use this code in your research, please cite the relevant papers:
 
@@ -373,7 +373,7 @@ If you use this code in your research, please cite the relevant papers:
 }
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Areas for improvement:
 
@@ -383,18 +383,18 @@ Contributions are welcome! Areas for improvement:
 - Mobile/web deployment
 - Better style extraction from images
 
-## 📄 License
+## License
 
 This project is for research and educational purposes. Please check individual paper licenses for commercial use.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 This implementation builds upon research from:
 - Alex Graves (DeepMind) - Original RNN handwriting synthesis
 - ETH Zurich - DeepWriting project
 - CVPR 2023 - Style-Disentangled Transformer
 
-## 📧 Contact
+## Contact
 
 For questions or issues, please open a GitHub issue or contact [your-email].
 
