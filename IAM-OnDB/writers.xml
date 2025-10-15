@@ -1,0 +1,1053 @@
+<opt>
+  <Writer name="10000" DayOfBirth="1982-06-08" EducationalDegree="Dipl. Inform." Gender="Male" NativeCountry="Germany" NativeLanguage="German" OtherLanguage="French" Profession="PhD-Student" WritingType="Right-handed">
+    <Science>Computer Science</Science>
+    <Science>Mathematics</Science>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10001" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="France" NativeLanguage="French" WritingType="Right-handed">
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10002" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="Great Britain" NativeLanguage="English" WritingType="Right-handed" WrittenLanguage="English" />
+  <Writer name="10003" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="France" NativeLanguage="French" WritingType="Right-handed">
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10004" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="France" NativeLanguage="French" WritingType="Right-handed">
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10005" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10006" DayOfBirth="" EducationalDegree="" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10007" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="France" NativeLanguage="French" WritingType="Right-handed">
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10008" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="France" NativeLanguage="French" WritingType="Right-handed">
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10009" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="Germany" NativeLanguage="German" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10010" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="Switzerland" NativeLanguage="French" OtherLanguage="English" WritingType="Right-handed" WrittenLanguage="French" />
+  <Writer name="10011" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="Switzerland" NativeLanguage="French" WritingType="Right-handed">
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10012" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="Switzerland" NativeLanguage="French" WritingType="Right-handed">
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10013" DayOfBirth="" EducationalDegree="" Gender="Female" NativeCountry="France" NativeLanguage="French" WritingType="Right-handed">
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10014" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="Russia" NativeLanguage="Russian" WritingType="Right-handed">
+    <WrittenLanguage>Russian</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10015" DayOfBirth="" EducationalDegree="" Gender="Female" NativeCountry="Switzerland" NativeLanguage="French" OtherLanguage="English" WritingType="Right-handed" WrittenLanguage="French" />
+  <Writer name="10016" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="France" NativeLanguage="French" WritingType="Right-handed">
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10017" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="Switzerland" NativeLanguage="French" OtherLanguage="English" WritingType="Right-handed" WrittenLanguage="French" />
+  <Writer name="10018" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="Switzerland" NativeLanguage="French" OtherLanguage="English" WritingType="Right-handed" WrittenLanguage="French" />
+  <Writer name="10019" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="Germany" NativeLanguage="German" OtherLanguage="French" WritingType="Left-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10020" DayOfBirth="" EducationalDegree="" Gender="Female" NativeCountry="Switzerland" NativeLanguage="French" OtherLanguage="English" WritingType="Right-handed" WrittenLanguage="French" />
+  <Writer name="10021" DayOfBirth="" EducationalDegree="" Gender="Female" NativeCountry="Switzerland" NativeLanguage="French" OtherLanguage="English" WritingType="Right-handed" WrittenLanguage="French" />
+  <Writer name="10022" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="Spain" NativeLanguage="Spanish" WritingType="Right-handed">
+    <WrittenLanguage>Spanish</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10023" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="China" NativeLanguage="Chinese" WritingType="Right-handed">
+    <WrittenLanguage>Chinese</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10024" DayOfBirth="" EducationalDegree="" Gender="Female" NativeCountry="Switzerland" NativeLanguage="French" OtherLanguage="English" WritingType="Right-handed" WrittenLanguage="French" />
+  <Writer name="10025" DayOfBirth="" EducationalDegree="" Gender="Male" NativeCountry="Great Britain" NativeLanguage="English" WritingType="Right-handed" WrittenLanguage="English" />
+  <Writer name="10026" DayOfBirth="1978-09-25" EducationalDegree="Dipl. Phil. nat." Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Science="Computer Science" WritingType="Right-handed">
+    <OtherLanguage>Italian</OtherLanguage>
+    <OtherLanguage>Latin</OtherLanguage>
+    <Profession>PhD-Student</Profession>
+    <Profession>Assistent</Profession>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10027" DayOfBirth="1982-06-07" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Left-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10028" DayOfBirth="1974-09-14" EducationalDegree="MSc" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="PhD-Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10029" DayOfBirth="1978-03-19" EducationalDegree="MSc" Gender="Male" NativeCountry="Hungary" NativeLanguage="Hungarian" Profession="PhD-Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>Hungarian</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10030" DayOfBirth="1978-11-08" EducationalDegree="Dipl. Inform." Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Science="Computer Science" WritingType="Left-handed">
+    <Profession>PhD-Student</Profession>
+    <Profession>Assistant</Profession>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10031" DayOfBirth="1974-06-07" EducationalDegree="Dipl. Phil. nat." Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="PhD-Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10032" DayOfBirth="1976-04-17" EducationalDegree="PhD" Gender="Male" NativeCountry="France" NativeLanguage="French" Profession="Research Assistant" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>Italian</WrittenLanguage>
+  </Writer>
+  <Writer name="10033" DayOfBirth="1979-07-16" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Italian" Profession="Student" Science="Education" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10034" DayOfBirth="1983-02-10" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10035" DayOfBirth="1975-07-02" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" WritingType="Right-handed" WrittenLanguage="German">
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>English</OtherLanguage>
+  </Writer>
+  <Writer name="10036" DayOfBirth="1975-10-27" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed" WrittenLanguage="German">
+    <OtherLanguage>English</OtherLanguage>
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>Italian</OtherLanguage>
+  </Writer>
+  <Writer name="10037" DayOfBirth="1973-09-14" EducationalDegree="PhD" Gender="Female" NativeCountry="Argentinia" NativeLanguage="Spanish" OtherLanguage="German" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>Spanish</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10038" DayOfBirth="1984-07-18" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>Italian</WrittenLanguage>
+  </Writer>
+  <Writer name="10039" DayOfBirth="1979-07-08" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Italian" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10040" DayOfBirth="1982-03-31" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Left-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>Italian</WrittenLanguage>
+  </Writer>
+  <Writer name="10041" DayOfBirth="1974-07-14" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10042" DayOfBirth="1976-11-20" EducationalDegree="MSc" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Science="Physics" WritingType="Right-handed" WrittenLanguage="German">
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>English</OtherLanguage>
+  </Writer>
+  <Writer name="10043" DayOfBirth="1980-06-14" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10044" DayOfBirth="1981-04-04" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed" WrittenLanguage="German">
+    <OtherLanguage>English</OtherLanguage>
+    <OtherLanguage>French</OtherLanguage>
+  </Writer>
+  <Writer name="10045" DayOfBirth="1982-07-29" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Italian" Profession="Student" Science="Computer Science" WritingType="Left-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10046" DayOfBirth="1983-07-27" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10047" DayOfBirth="1979-07-16" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Italian" Profession="Student" Science="Media" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10048" DayOfBirth="1977-01-07" EducationalDegree="Dipl. Phil. nat." Gender="Female" NativeCountry="Finland" NativeLanguage="Finnish" Science="Chemistry" WritingType="Right-handed">
+    <WrittenLanguage>Finnish</WrittenLanguage>
+    <WrittenLanguage>Swiss German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10049" DayOfBirth="1981-03-03" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" WritingType="Right-handed">
+    <OtherLanguage>Italian</OtherLanguage>
+    <OtherLanguage>French</OtherLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10050" DayOfBirth="1979-12-25" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10051" DayOfBirth="1984-09-19" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10052" DayOfBirth="1976-02-26" EducationalDegree="Dipl." Gender="Female" NativeCountry="Germany" NativeLanguage="German" OtherLanguage="Spanish" Profession="Psychologist" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10053" DayOfBirth="1978-02-14" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Spanish" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10054" DayOfBirth="1979-04-26" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Education" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10055" DayOfBirth="2004-04-22" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10056" DayOfBirth="1982-03-22" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10057" DayOfBirth="1983-11-12" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Left-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10058" DayOfBirth="1984-10-18" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10059" DayOfBirth="1981-04-25" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>Russian</OtherLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10060" DayOfBirth="1980-12-08" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <OtherLanguage>English</OtherLanguage>
+    <OtherLanguage>Italian</OtherLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10061" DayOfBirth="1980-12-02" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="English" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10062" DayOfBirth="1969-01-07" EducationalDegree="Master of Science" Gender="Female" NativeCountry="Germany" NativeLanguage="German" Profession="Teaching" WritingType="Right-handed">
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>Italian</OtherLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>Spanish</WrittenLanguage>
+  </Writer>
+  <Writer name="10063" DayOfBirth="1970-06-12" EducationalDegree="Master of Science" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Science="Computer Science" WritingType="Right-handed">
+    <OtherLanguage>Italian</OtherLanguage>
+    <OtherLanguage>Spanish</OtherLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10064" DayOfBirth="1967-05-14" EducationalDegree="MS" Gender="Male" NativeCountry="Brazil" NativeLanguage="Portuguese" Profession="Electrical Engeenearing" WritingType="Right-handed">
+    <WrittenLanguage>Portuguese</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10065" DayOfBirth="1962-06-01" EducationalDegree="Licentiate" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Chinese" Profession="Teacher" Science="Linguistics" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10066" DayOfBirth="1986-02-03" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" WritingType="Left-handed" WrittenLanguage="German">
+    <OtherLanguage>English</OtherLanguage>
+    <OtherLanguage>French</OtherLanguage>
+  </Writer>
+  <Writer name="10067" DayOfBirth="1979-11-18" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10068" DayOfBirth="1976-12-05" EducationalDegree="Matur" Gender="Female" NativeCountry="Finnland" NativeLanguage="Finnish" WritingType="Right-handed">
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>Swedish</OtherLanguage>
+    <Profession>Nurse</Profession>
+    <Profession>Student</Profession>
+    <WrittenLanguage>Finnish</WrittenLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10069" DayOfBirth="1980-12-09" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" WritingType="Right-handed">
+    <OtherLanguage>Spanish</OtherLanguage>
+    <OtherLanguage>English</OtherLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>Norweigian</WrittenLanguage>
+    <WrittenLanguage>Italian</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10070" DayOfBirth="1980-02-16" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="English" Profession="Student" Science="Computer Science" WritingType="Right-handed" WrittenLanguage="German" />
+  <Writer name="10071" DayOfBirth="1977-01-31" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Politics" WritingType="Right-handed">
+    <OtherLanguage>Italian</OtherLanguage>
+    <OtherLanguage>Latin</OtherLanguage>
+    <OtherLanguage>Spanish</OtherLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10072" DayOfBirth="1983-03-04" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>Turkish</WrittenLanguage>
+  </Writer>
+  <Writer name="10073" DayOfBirth="1984-03-23" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10074" DayOfBirth="1983-03-27" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" WritingType="Right-handed" WrittenLanguage="German">
+    <OtherLanguage>English</OtherLanguage>
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>Latin</OtherLanguage>
+  </Writer>
+  <Writer name="10075" DayOfBirth="1984-10-17" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10076" DayOfBirth="1984-02-11" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Science="Computer Science" WritingType="Right-handed">
+    <Profession>Student</Profession>
+    <Profession>Software Engineer</Profession>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10077" DayOfBirth="1978-03-28" EducationalDegree="MSc" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Biologist" Science="Biology" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10078" DayOfBirth="1986-03-12" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="English" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10079" DayOfBirth="1984-09-09" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10080" DayOfBirth="1980-09-09" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10081" DayOfBirth="1982-06-12" EducationalDegree="Matur" Gender="Male" NativeCountry="Germany" NativeLanguage="German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10082" DayOfBirth="1982-03-27" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10083" DayOfBirth="1979-08-29" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Latin" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10084" DayOfBirth="1981-06-17" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Left-handed">
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>Italian</OtherLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10085" DayOfBirth="1982-04-17" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Education" WritingType="Right-handed">
+    <OtherLanguage>Italian</OtherLanguage>
+    <OtherLanguage>Spanish</OtherLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10086" DayOfBirth="1984-07-06" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Mathematics" WritingType="Right-handed" WrittenLanguage="German">
+    <OtherLanguage>English</OtherLanguage>
+    <OtherLanguage>French</OtherLanguage>
+  </Writer>
+  <Writer name="10087" DayOfBirth="1972-11-01" EducationalDegree="El.-Ing. FH" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="English" Profession="Student" Science="Physics" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10088" DayOfBirth="1986-01-14" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Italian" Profession="Student" Science="Physics" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10089" DayOfBirth="1984-10-08" EducationalDegree="Matur" Gender="Male" NativeCountry="Itsly" NativeLanguage="German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>English</OtherLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>Italian</WrittenLanguage>
+  </Writer>
+  <Writer name="10090" DayOfBirth="1984-09-04" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10091" DayOfBirth="Unknown" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10092" DayOfBirth="1982-01-28" EducationalDegree="Matur" Gender="Male" NativeCountry="Turkey" NativeLanguage="Turkish" OtherLanguage="French" Profession="Student" WritingType="Right-handed">
+    <WrittenLanguage>Turkish</WrittenLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10093" DayOfBirth="1985-09-30" EducationalDegree="Matur" Gender="Male" NativeCountry="Slovakia" NativeLanguage="Slovak" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>Slovak</WrittenLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10094" DayOfBirth="1983-07-06" EducationalDegree="Bachelor" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10095" DayOfBirth="1968-05-30" EducationalDegree="PhD" Gender="Male" NativeCountry="Germany" NativeLanguage="German" Profession="Social Work" Science="Education Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>Hungarian</WrittenLanguage>
+  </Writer>
+  <Writer name="10096" DayOfBirth="1971-01-28" EducationalDegree="FH" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Italian" Profession="Engineer" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10097" DayOfBirth="1979-11-29" EducationalDegree="Abitur" Gender="Female" NativeCountry="Germany" NativeLanguage="German" Profession="Student" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10098" DayOfBirth="1982-10-25" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>Italian</WrittenLanguage>
+  </Writer>
+  <Writer name="10099" DayOfBirth="1982-04-08" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" WritingType="Right-handed" WrittenLanguage="English">
+    <Science>Sociology</Science>
+    <Science>Computer Science</Science>
+  </Writer>
+  <Writer name="10100" DayOfBirth="1983-07-10" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10101" DayOfBirth="1979-09-09" EducationalDegree="Matur" Gender="Male" NativeCountry="Russia" NativeLanguage="Russian" OtherLanguage="English" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>Russian</WrittenLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+  </Writer>
+  <Writer name="10102" DayOfBirth="1981-06-11" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>Italian</OtherLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10103" DayOfBirth="1980-10-03" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>Chinese</OtherLanguage>
+    <OtherLanguage>Vietnamese</OtherLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10104" DayOfBirth="1977-06-18" EducationalDegree="Dipl." Gender="Female" NativeCountry="Germany" NativeLanguage="German" OtherLanguage="Spanish" Profession="Doctor" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10105" DayOfBirth="1943-06-14" EducationalDegree="Dipl." Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Secretary" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>Italian</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10106" DayOfBirth="1983-02-25" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Geography" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10107" DayOfBirth="1982-06-12" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10108" DayOfBirth="1981-10-25" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="French" OtherLanguage="English" Profession="Student" WritingType="Right-handed">
+    <Science>Sports</Science>
+    <Science>Computer Science</Science>
+    <Science>French</Science>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+  </Writer>
+  <Writer name="10109" DayOfBirth="1983-11-28" EducationalDegree="Matur" Gender="Male" NativeCountry="Liechtenstein" NativeLanguage="German" OtherLanguage="English" Profession="Student" Science="Computer Science" WritingType="Right-handed" WrittenLanguage="German" />
+  <Writer name="10110" DayOfBirth="1985-04-04" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Left-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10111" DayOfBirth="1964-05-04" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Spanish" Profession="Student" Science="Pharmacy" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10112" DayOfBirth="1984-01-29" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed" WrittenLanguage="German">
+    <OtherLanguage>English</OtherLanguage>
+    <OtherLanguage>French</OtherLanguage>
+  </Writer>
+  <Writer name="10113" DayOfBirth="1983-09-12" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Geography" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10114" DayOfBirth="1982-09-28" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10115" DayOfBirth="1947-10-20" EducationalDegree="Business School" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Italian" Profession="Secretary" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10116" DayOfBirth="1975-12-02" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="History" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>Italian</WrittenLanguage>
+  </Writer>
+  <Writer name="10117" DayOfBirth="1980-03-02" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="English" Profession="Student" Science="Computer Science" WritingType="Right-handed" WrittenLanguage="German" />
+  <Writer name="10118" DayOfBirth="1984-10-27" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Physics" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10119" DayOfBirth="1982-10-04" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Mathematics" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10120" DayOfBirth="1964-06-18" EducationalDegree="Dr. phil. nat." Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Physicist" Science="Physics" WritingType="Right-handed">
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>Italian</OtherLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10121" DayOfBirth="1984-12-24" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>Italian</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10122" DayOfBirth="1985-02-01" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10123" DayOfBirth="1984-02-11" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10124" DayOfBirth="1985-11-17" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed" WrittenLanguage="German">
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>English</OtherLanguage>
+  </Writer>
+  <Writer name="10125" DayOfBirth="1979-09-07" EducationalDegree="Dipl." Gender="Female" NativeCountry="Germany" NativeLanguage="German" Profession="PhD-Student" Science="Biology" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10126" DayOfBirth="1983-08-03" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="English" Profession="Student" Science="Computer Science" WritingType="Right-handed" WrittenLanguage="German" />
+  <Writer name="10127" DayOfBirth="1972-02-27" EducationalDegree="BS" Gender="Male" NativeCountry="Iran" NativeLanguage="Persian" Profession="Student" WritingType="Right-handed">
+    <Science>Computer Science</Science>
+    <Science>Chemistry</Science>
+    <WrittenLanguage>Persian</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+  </Writer>
+  <Writer name="10128" DayOfBirth="1984-06-25" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10129" DayOfBirth="1984-09-21" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10130" DayOfBirth="1982-03-25" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed" WrittenLanguage="German">
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>English</OtherLanguage>
+    <OtherLanguage>Latin</OtherLanguage>
+  </Writer>
+  <Writer name="10131" DayOfBirth="1980-04-27" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10132" DayOfBirth="1973-10-25" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Secretary" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10133" DayOfBirth="1980-02-19" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Left-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10134" DayOfBirth="1981-01-31" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10135" DayOfBirth="1985-11-08" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10136" DayOfBirth="1985-04-08" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Geography" WritingType="Right-handed">
+    <OtherLanguage>Spanish</OtherLanguage>
+    <OtherLanguage>French</OtherLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10137" DayOfBirth="1985-03-02" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Geography" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10138" DayOfBirth="1984-11-09" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Geography" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10139" DayOfBirth="1983-12-16" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10140" DayOfBirth="1979-12-30" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Italian" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10141" DayOfBirth="1982-06-24" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10142" DayOfBirth="1985-07-03" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Biology" WritingType="Right-handed" WrittenLanguage="German">
+    <OtherLanguage>English</OtherLanguage>
+    <OtherLanguage>French</OtherLanguage>
+  </Writer>
+  <Writer name="10143" DayOfBirth="1984-02-15" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Spanish" Profession="Student" Science="Biology" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10144" DayOfBirth="1974-08-05" EducationalDegree="Dipl. Phil. nat." Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="PhD-Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10145" DayOfBirth="1982-09-02" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10146" DayOfBirth="1982-04-30" EducationalDegree="College" Gender="Male" NativeCountry="Slovakia" NativeLanguage="Slovakian" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>Slovakian</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>Czech</WrittenLanguage>
+  </Writer>
+  <Writer name="10147" DayOfBirth="1983-12-27" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10148" DayOfBirth="1982-05-04" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="German" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10149" DayOfBirth="1982-10-05" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Science="History" WritingType="Right-handed">
+    <Profession>Student</Profession>
+    <Profession>Seller</Profession>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10150" DayOfBirth="1966-09-09" EducationalDegree="Lic. rer. pol." Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Spanish" Profession="IT-Trainer" WritingType="Left-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10151" DayOfBirth="1969-09-13" EducationalDegree="Dr. Phil. nat." Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Italian" Science="Biology" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10152" DayOfBirth="1980-09-29" EducationalDegree="Matur" Gender="Male" NativeCountry="Serbia" NativeLanguage="Serbian" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>Serbian</WrittenLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10153" DayOfBirth="1979-03-08" EducationalDegree="n" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" WritingType="Right-handed">
+    <Science>Computer Science</Science>
+    <Science>Mathematics</Science>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10154" DayOfBirth="1983-04-21" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Pharmacy" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10155" DayOfBirth="1979-03-16" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="English" Profession="Student" Science="Chemistry" WritingType="Left-handed" WrittenLanguage="German" />
+  <Writer name="10156" DayOfBirth="1980-08-09" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" WritingType="Right-handed">
+    <Science>Geography</Science>
+    <Science>Education</Science>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10157" DayOfBirth="1977-03-30" EducationalDegree="FH" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Portuguese" WritingType="Right-handed">
+    <Profession>Conservator</Profession>
+    <Profession>Restorer</Profession>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>Italian</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10158" DayOfBirth="1982-08-04" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Sociology" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10159" DayOfBirth="1979-03-12" EducationalDegree="Abitur" Gender="Male" NativeCountry="Germany" NativeLanguage="German" Profession="Student" Science="Buisiness studies" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10160" DayOfBirth="1980-04-14" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Buisiness studies" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10161" DayOfBirth="1981-02-03" EducationalDegree="Abitur" Gender="Female" NativeCountry="Slovakia" NativeLanguage="Hungarian" OtherLanguage="Czech" Profession="Student" Science="Theology" WritingType="Right-handed">
+    <WrittenLanguage>Hungarian</WrittenLanguage>
+    <WrittenLanguage>Slovak</WrittenLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10162" DayOfBirth="1984-06-29" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10163" DayOfBirth="1982-06-05" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed" WrittenLanguage="German">
+    <OtherLanguage>English</OtherLanguage>
+    <OtherLanguage>French</OtherLanguage>
+  </Writer>
+  <Writer name="10164" DayOfBirth="1984-13-29" EducationalDegree="Interational Baccaloreate" Gender="Male" NativeCountry="Germany" NativeLanguage="German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10165" DayOfBirth="1973-02-04" EducationalDegree="Dr. Inf." Gender="Male" NativeCountry="Germany" NativeLanguage="German" OtherLanguage="French" Profession="Assistant" Science="Information management" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10166" DayOfBirth="1984-04-17" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Linguistics" WritingType="Right-handed" WrittenLanguage="German">
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>English</OtherLanguage>
+  </Writer>
+  <Writer name="10167" DayOfBirth="1985-03-04" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Italian" Profession="Student" Science="Pharmacy" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10168" DayOfBirth="1974-02-24" EducationalDegree="Licentiate" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Science="History" WritingType="Right-handed">
+    <OtherLanguage>Italian</OtherLanguage>
+    <OtherLanguage>Spanish</OtherLanguage>
+    <Profession>Librarian</Profession>
+    <Profession>Historian</Profession>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10169" DayOfBirth="1977-12-22" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="History" WritingType="Left-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10170" DayOfBirth="1980-06-30" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Psychology" WritingType="Right-handed" WrittenLanguage="German">
+    <OtherLanguage>English</OtherLanguage>
+    <OtherLanguage>French</OtherLanguage>
+  </Writer>
+  <Writer name="10171" DayOfBirth="1983-07-07" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10172" DayOfBirth="1980-08-26" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Left-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10173" DayOfBirth="1980-04-22" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10174" DayOfBirth="1978-03-21" EducationalDegree="Lic. rer. pol." Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Research Assistant" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>Latin</WrittenLanguage>
+  </Writer>
+  <Writer name="10175" DayOfBirth="1976-03-07" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Philosophy" WritingType="Right-handed">
+    <OtherLanguage>Spanish</OtherLanguage>
+    <OtherLanguage>French</OtherLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10176" DayOfBirth="1982-05-15" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Geology" WritingType="Right-handed">
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>Dutch</OtherLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>Italian</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10177" DayOfBirth="1981-06-22" EducationalDegree="Abitur" Gender="Female" NativeCountry="Germany" NativeLanguage="German" OtherLanguage="Spanish" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10178" DayOfBirth="1986-01-03" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Pharmacy" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>Italian</WrittenLanguage>
+  </Writer>
+  <Writer name="10179" DayOfBirth="1979-10-06" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>Spanish</WrittenLanguage>
+  </Writer>
+  <Writer name="10180" DayOfBirth="1976-07-12" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Buisiness studies" WritingType="Left-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10181" DayOfBirth="1979-07-26" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" WritingType="Left-handed">
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>Italian</OtherLanguage>
+    <Science>Mathematics</Science>
+    <Science>English Literature</Science>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10182" DayOfBirth="1982-11-23" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10183" DayOfBirth="1982-04-23" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10184" DayOfBirth="1984-12-05" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>Italian</WrittenLanguage>
+  </Writer>
+  <Writer name="10185" DayOfBirth="1980-03-11" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Italian" Profession="Student" Science="Psychology" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10186" DayOfBirth="1977-10-20" EducationalDegree="Master" Gender="Female" NativeCountry="Finland" NativeLanguage="Finnish" OtherLanguage="Swedish" Science="Linguistics" WritingType="Right-handed">
+    <Profession>Interpreter</Profession>
+    <Profession>Translator</Profession>
+    <Profession>Student</Profession>
+    <WrittenLanguage>Finnish</WrittenLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10187" DayOfBirth="1977-09-08" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10188" DayOfBirth="1982-02-06" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Veterinary medicine" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10189" DayOfBirth="1980-06-08" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10190" DayOfBirth="1981-04-14" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" WritingType="Right-handed">
+    <OtherLanguage>French</OtherLanguage>
+    <Profession>Student</Profession>
+    <Science>Veterinary medicine</Science>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10191" DayOfBirth="1972-12-30" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Pharmacy" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10192" DayOfBirth="1981-11-17" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Biology" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10193" DayOfBirth="1977-12-27" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" WritingType="Right-handed">
+    <Science>Computer Science</Science>
+    <Science>Mathematics</Science>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>Italian</WrittenLanguage>
+  </Writer>
+  <Writer name="10194" DayOfBirth="1978-11-17" EducationalDegree="MA Management" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="Italian" Profession="Research Assistent" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10195" DayOfBirth="1980-08-15" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="English" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10196" DayOfBirth="1979-03-17" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10197" DayOfBirth="1981-07-14" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Education" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10198" DayOfBirth="1976-08-12" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Science="Theology" WritingType="Right-handed" WrittenLanguage="German">
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>English</OtherLanguage>
+    <Profession>Student</Profession>
+    <Profession>Singer</Profession>
+  </Writer>
+  <Writer name="10199" DayOfBirth="1981-07-11" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Teacher" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>Italian</WrittenLanguage>
+  </Writer>
+  <Writer name="10200" DayOfBirth="1983-07-20" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Left-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10201" DayOfBirth="1979-06-29" EducationalDegree="Licence en traduction" Gender="Female" NativeCountry="Switzerland" NativeLanguage="French" Profession="Translator" WritingType="Right-handed">
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>Italian</WrittenLanguage>
+  </Writer>
+  <Writer name="10202" DayOfBirth="1983-11-22" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="English" Profession="Student" Science="Computer Science" WritingType="Right-handed" WrittenLanguage="German" />
+  <Writer name="10203" DayOfBirth="1980-07-25" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10204" DayOfBirth="1985-07-15" EducationalDegree="General Certificate of Education" Gender="Male" NativeCountry="Germany" NativeLanguage="German" Profession="Student" Science="Chemics" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10205" DayOfBirth="1976-09-11" EducationalDegree="s" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" Science="Chemestry" WritingType="Right-handed">
+    <OtherLanguage>Italian</OtherLanguage>
+    <OtherLanguage>Spanish</OtherLanguage>
+    <Profession>PhD-Student</Profession>
+    <Profession>Dipl.</Profession>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10206" DayOfBirth="1983-04-26" EducationalDegree="Abitur" Gender="Female" NativeCountry="Germany" NativeLanguage="German" Profession="Student" WritingType="Right-handed">
+    <OtherLanguage>French</OtherLanguage>
+    <OtherLanguage>Italian</OtherLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10207" DayOfBirth="1983-03-22" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="English" Profession="Student" Science="Pharmacy" WritingType="Right-handed" WrittenLanguage="German" />
+  <Writer name="10208" DayOfBirth="1971-06-03" EducationalDegree="Dipl. ing." Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Right-handed" WrittenLanguage="German">
+    <OtherLanguage>English</OtherLanguage>
+    <OtherLanguage>French</OtherLanguage>
+  </Writer>
+  <Writer name="10209" DayOfBirth="1976-07-25" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Linguistics" WritingType="Right-handed">
+    <OtherLanguage>Tagalog</OtherLanguage>
+    <OtherLanguage>Finnisch</OtherLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>Italian</WrittenLanguage>
+  </Writer>
+  <Writer name="10210" DayOfBirth="1970-04-16" EducationalDegree="Licentiate" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Teacher" Science="Education" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10211" DayOfBirth="1984-07-10" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Psychology" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10212" DayOfBirth="1974-11-07" EducationalDegree="Dipl." Gender="Female" NativeCountry="Polen" NativeLanguage="Polnish" Profession="PhD-Student" Science="Linguistics" WritingType="Right-handed">
+    <OtherLanguage>Russian</OtherLanguage>
+    <OtherLanguage>Italian</OtherLanguage>
+    <WrittenLanguage>Polnish</WrittenLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10213" DayOfBirth="1981-02-23" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="English" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10214" DayOfBirth="1982-05-24" EducationalDegree="Matur" Gender="Female" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10215" DayOfBirth="1977-01-25" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Computer Science" WritingType="Left-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10216" DayOfBirth="1983-08-06" EducationalDegree="Bachelor" Gender="Male" NativeCountry="Ukraine" NativeLanguage="Unkrainian" OtherLanguage="Spanish" Science="English" WritingType="Right-handed">
+    <Profession>Student</Profession>
+    <Profession>Teacher</Profession>
+    <WrittenLanguage>Ukrainian</WrittenLanguage>
+    <WrittenLanguage>Russian</WrittenLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+  </Writer>
+  <Writer name="10217" DayOfBirth="1979-09-03" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" OtherLanguage="English" Profession="Student" Science="Computer Science" WritingType="Left-handed" WrittenLanguage="German" />
+  <Writer name="10218" DayOfBirth="1984-04-29" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="Swiss German" Profession="Student" Science="Chemestry" WritingType="Right-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>English</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+  </Writer>
+  <Writer name="10219" DayOfBirth="1958-01-04" EducationalDegree="Dipl. Math." Gender="Female" NativeCountry="Switzerland" NativeLanguage="French" OtherLanguage="English" Science="Computer Science" WritingType="Right-handed">
+    <Profession>Teacher</Profession>
+    <Profession>System Ingenieur</Profession>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>German</WrittenLanguage>
+  </Writer>
+  <Writer name="10220 h" DayOfBirth="1979-03-26" EducationalDegree="Matur" Gender="Male" NativeCountry="Switzerland" NativeLanguage="German" OtherLanguage="French" Profession="Student" Science="Computer Science" WritingType="Right-handed" WrittenLanguage="English" />
+  <Writer name="10221" DayOfBirth="1983-03-26" EducationalDegree="Matur" Gender="Female" NativeCountry="j" NativeLanguage="j" Profession="Student" Science="Education" WritingType="Left-handed">
+    <WrittenLanguage>German</WrittenLanguage>
+    <WrittenLanguage>French</WrittenLanguage>
+    <WrittenLanguage>r</WrittenLanguage>
+  </Writer>
+</opt>
