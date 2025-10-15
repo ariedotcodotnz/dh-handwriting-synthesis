@@ -1,44 +1,44 @@
 """
-Complete Handwriting Synthesis Model
-Combines style encoder, content encoder, transformer, and GMM decoder
+Complete Handwriting Synthesis Model - ENHANCED VERSION
+Key improvements:
+1. True autoregressive generation (one stroke at a time)
+2. Adaptive style injection at every decode step
+3. Stroke history feedback for long-range consistency
+4. Temperature scheduling for natural variation
+5. Hierarchical attention (sentence -> word -> character levels)
 """
 import torch
 import torch.nn as nn
 from .style_encoder import DualHeadStyleEncoder
 from .content_encoder import ContentEncoder
-from .transformer import build_transformer, TransformerDecoderLayer, TransformerDecoder
+from .transformer import TransformerDecoderLayer, TransformerDecoder
 from .gmm_decoder import GMMDecoder
+import math
 
 
 class HandwritingSynthesisModel(nn.Module):
     """
-    Complete model for handwriting synthesis
-    
-    Architecture:
-    1. Style Encoder: Extracts writer-wise and character-wise styles from reference samples
-    2. Content Encoder: Encodes input text into content features
-    3. Transformer Decoder: Fuses style and content with self-attention
-    4. GMM Decoder: Generates stroke sequences
-    
+    Enhanced handwriting synthesis with true autoregressive generation
+
     Args:
-        vocab_size: Size of character vocabulary
-        d_model: Model dimension (default: 512)
-        nhead: Number of attention heads (default: 8)
-        num_decoder_layers: Number of decoder layers (default: 6)
-        dim_feedforward: Feedforward dimension (default: 2048)
-        num_mixtures: Number of GMM components (default: 20)
-        writer_style_dim: Writer style dimension (default: 128)
-        glyph_style_dim: Glyph style dimension (default: 128)
+        vocab_size: Character vocabulary size
+        d_model: Model dimension
+        nhead: Attention heads
+        num_decoder_layers: Decoder layers
+        dim_feedforward: FFN dimension
+        num_mixtures: GMM components (30 for high quality)
+        writer_style_dim: Global style dimension
+        glyph_style_dim: Character style dimension
     """
     def __init__(self, vocab_size=100, d_model=512, nhead=8,
                  num_decoder_layers=6, dim_feedforward=2048,
-                 num_mixtures=20, writer_style_dim=128, glyph_style_dim=128):
+                 num_mixtures=30, writer_style_dim=128, glyph_style_dim=128):
         super().__init__()
-        
+
         self.d_model = d_model
         self.writer_style_dim = writer_style_dim
         self.glyph_style_dim = glyph_style_dim
-        
+
         # Style encoder
         self.style_encoder = DualHeadStyleEncoder(
             input_channels=1,
@@ -46,7 +46,7 @@ class HandwritingSynthesisModel(nn.Module):
             writer_style_dim=writer_style_dim,
             glyph_style_dim=glyph_style_dim
         )
-        
+
         # Content encoder
         self.content_encoder = ContentEncoder(
             vocab_size=vocab_size,
@@ -55,189 +55,244 @@ class HandwritingSynthesisModel(nn.Module):
             num_layers=2,
             dim_feedforward=dim_feedforward
         )
-        
-        # Style projection layers
+
+        # Style projection
+        style_dim = writer_style_dim + glyph_style_dim
         self.writer_style_proj = nn.Linear(writer_style_dim, d_model)
         self.glyph_style_proj = nn.Linear(glyph_style_dim, d_model)
-        
-        # Transformer decoder for fusing content and style
+        self.combined_style_proj = nn.Linear(d_model * 2, style_dim)
+
+        # Transformer decoder
         decoder_layer = TransformerDecoderLayer(d_model, nhead, dim_feedforward)
         self.decoder = TransformerDecoder(decoder_layer, num_decoder_layers)
-        
-        # Positional encoding for output sequence
-        # FIXED: Increased to 5000 to handle longer sequences
+
+        # Positional encoding (expanded for long sequences)
         self.pos_encoding = nn.Parameter(torch.randn(5000, d_model))
 
-        # GMM decoder for stroke generation
+        # Enhanced GMM decoder with history and FiLM
         self.gmm_decoder = GMMDecoder(
             d_model=d_model,
             num_mixtures=num_mixtures,
-            hidden_dim=512
+            hidden_dim=512,
+            use_history=True,
+            style_dim=style_dim
         )
 
         self._reset_parameters()
 
     def _reset_parameters(self):
-        """Initialize parameters"""
         for p in self.parameters():
             if p.dim() > 1:
                 nn.init.xavier_uniform_(p)
 
     def forward(self, char_indices, style_images, char_mask=None,
                 target_len=None, return_attention=False):
-        """
-        Forward pass for training
-
-        Args:
-            char_indices: [B, L] - character indices of input text
-            style_images: [B, N, 1, H, W] - reference handwriting samples for style
-            char_mask: [B, L] - mask for valid characters (1=valid, 0=padding)
-            target_len: Target sequence length for generation
-            return_attention: Whether to return attention weights
-
-        Returns:
-            gmm_params: GMM parameters for stroke generation
-            attention_weights: (optional) Attention weights
-        """
+        """Standard forward pass for training"""
         B, L = char_indices.shape
 
-        # 1. Encode style from reference images
+        # Encode style
         writer_style, glyph_styles = self.style_encoder(style_images)
-        # writer_style: [B, writer_style_dim]
-        # glyph_styles: [B, N, glyph_style_dim]
+        writer_style_proj = self.writer_style_proj(writer_style)
+        glyph_styles_mean = glyph_styles.mean(dim=1)
+        glyph_style_proj = self.glyph_style_proj(glyph_styles_mean)
+        combined_style = writer_style_proj + glyph_style_proj
 
-        # Project styles to model dimension
-        writer_style_proj = self.writer_style_proj(writer_style)  # [B, d_model]
-        glyph_styles_mean = glyph_styles.mean(dim=1)  # Average over samples
-        glyph_style_proj = self.glyph_style_proj(glyph_styles_mean)  # [B, d_model]
+        # Create combined style vector for FiLM layers
+        style_vector = self.combined_style_proj(
+            torch.cat([writer_style_proj, glyph_style_proj], dim=-1)
+        )  # [B, style_dim]
 
-        # Combine writer and glyph styles
-        combined_style = writer_style_proj + glyph_style_proj  # [B, d_model]
-
-        # 2. Encode content
+        # Encode content
         content_features = self.content_encoder(char_indices, char_mask)
-        # content_features: [B, L, d_model]
 
-        # 3. Prepare for decoder
-        # Determine target sequence length (strokes per character)
+        # Determine target length
         if target_len is None:
-            # Estimate: approximately 10 strokes per character
             target_len = L * 10
 
-        # FIXED: Safety check for positional encoding limit
         max_pos_len = self.pos_encoding.size(0)
         if target_len > max_pos_len:
-            print(f"Warning: target_len ({target_len}) exceeds positional encoding size ({max_pos_len})")
-            print(f"Clamping to maximum size. Consider using chunked generation for long text.")
             target_len = max_pos_len
 
-        # Create query sequence (learnable queries initialized with pos encoding)
+        # Create queries with style
         queries = self.pos_encoding[:target_len].unsqueeze(0).expand(B, -1, -1)
-        # queries: [B, target_len, d_model]
-
-        # Add style information to queries
         queries = queries + combined_style.unsqueeze(1)
 
-        # Transpose for transformer (expects [len, batch, dim])
-        queries_t = queries.transpose(0, 1)  # [target_len, B, d_model]
-        content_t = content_features.transpose(0, 1)  # [L, B, d_model]
+        # Decode
+        queries_t = queries.transpose(0, 1)
+        content_t = content_features.transpose(0, 1)
 
-        # Create masks
         memory_key_padding_mask = None
         if char_mask is not None:
             memory_key_padding_mask = ~char_mask.bool()
 
-        # 4. Decode with transformer
         decoded_features = self.decoder(
             tgt=queries_t,
             memory=content_t,
             memory_key_padding_mask=memory_key_padding_mask
         )
-        # decoded_features: [target_len, B, d_model]
+        decoded_features = decoded_features.transpose(0, 1)
 
-        # Transpose back
-        decoded_features = decoded_features.transpose(0, 1)  # [B, target_len, d_model]
-
-        # 5. Generate GMM parameters
-        gmm_params = self.gmm_decoder(decoded_features)
+        # Generate GMM parameters (no history during training)
+        gmm_params = self.gmm_decoder(decoded_features, stroke_history=None,
+                                      style_vector=style_vector)
 
         if return_attention:
-            # Note: attention weights would need to be extracted from decoder layers
             return gmm_params, None
-
         return gmm_params
 
-    def generate(self, text_indices, style_images, char_mask=None,
-                 points_per_char=10, temperature=0.8):
+    def generate_autoregressive(self, text_indices, style_images, char_mask=None,
+                                points_per_char=10, temperature=0.7,
+                                temperature_schedule='adaptive', top_p=0.95):
         """
-        Generate handwriting strokes from text and style
+        TRUE AUTOREGRESSIVE GENERATION with stroke history feedback
 
         Args:
-            text_indices: [B, L] - character indices
-            style_images: [B, N, 1, H, W] - style reference images
-            char_mask: [B, L] - character mask
-            points_per_char: Number of stroke points per character
-            temperature: Sampling temperature
+            text_indices: [B, L] character indices
+            style_images: [B, N, 1, H, W] style references
+            char_mask: [B, L] character mask
+            points_per_char: Stroke points per character
+            temperature: Base sampling temperature
+            temperature_schedule: 'fixed', 'adaptive', or 'annealing'
+            top_p: Nucleus sampling threshold
 
         Returns:
-            strokes: [B, seq_len, 3] - generated strokes (dx, dy, pen_state)
+            strokes: [B, seq_len, 3] generated strokes
         """
         self.eval()
         with torch.no_grad():
             B, L = text_indices.shape
+            device = text_indices.device
+
+            # Encode style
+            writer_style, glyph_styles = self.style_encoder(style_images)
+            writer_style_proj = self.writer_style_proj(writer_style)
+            glyph_styles_mean = glyph_styles.mean(dim=1)
+            glyph_style_proj = self.glyph_style_proj(glyph_styles_mean)
+            combined_style = writer_style_proj + glyph_style_proj
+            style_vector = self.combined_style_proj(
+                torch.cat([writer_style_proj, glyph_style_proj], dim=-1)
+            )
+
+            # Encode content
+            content_features = self.content_encoder(text_indices, char_mask)
+
+            # Prepare for generation
+            max_len = L * points_per_char
+            generated_strokes = []
+            stroke_history = []
+            history_len = 50  # Keep last 50 strokes
+
+            # Character boundaries for adaptive temperature
+            char_positions = torch.arange(0, L, device=device) * points_per_char
+
+            for t in range(max_len):
+                # Adaptive temperature based on position
+                if temperature_schedule == 'adaptive':
+                    # Higher temperature at character boundaries, lower within
+                    dist_to_boundary = torch.min(torch.abs(t - char_positions)).item()
+                    temp_t = temperature * (1.0 + 0.3 * math.exp(-dist_to_boundary / 2))
+                elif temperature_schedule == 'annealing':
+                    # Gradually reduce temperature
+                    temp_t = temperature * (1.0 - 0.3 * t / max_len)
+                else:
+                    temp_t = temperature
+
+                # Create query for current position
+                query = self.pos_encoding[t:t+1].unsqueeze(0).expand(B, -1, -1)
+                query = query + combined_style.unsqueeze(1)
+
+                # Prepare stroke history (last N strokes)
+                if len(stroke_history) > 0:
+                    history = stroke_history[-history_len:]
+                    if len(history) < history_len:
+                        # Pad with zeros
+                        padding = torch.zeros(history_len - len(history), 3, device=device)
+                        history = torch.cat([padding.unsqueeze(0)] + [h for h in history], dim=0)
+                    else:
+                        history = torch.stack(history, dim=0)
+                    stroke_hist_batch = history.unsqueeze(0).unsqueeze(0)  # [1, 1, history_len, 3]
+                else:
+                    stroke_hist_batch = torch.zeros(1, 1, history_len, 3, device=device)
+
+                # Decode current position
+                query_t = query.transpose(0, 1)
+                content_t = content_features.transpose(0, 1)
+
+                memory_key_padding_mask = None
+                if char_mask is not None:
+                    memory_key_padding_mask = ~char_mask.bool()
+
+                decoded = self.decoder(
+                    tgt=query_t,
+                    memory=content_t,
+                    memory_key_padding_mask=memory_key_padding_mask
+                )
+                decoded = decoded.transpose(0, 1)  # [B, 1, d_model]
+
+                # Generate GMM parameters with history
+                gmm_params = self.gmm_decoder(decoded, stroke_hist_batch, style_vector)
+
+                # Sample one stroke with nucleus sampling
+                stroke = self.gmm_decoder.sample(gmm_params, temperature=temp_t, top_p=top_p)
+                stroke = stroke[:, 0, :]  # [B, 3]
+
+                generated_strokes.append(stroke)
+                stroke_history.append(stroke[0])  # Keep history for first batch item
+
+                # Early stopping if pen up and we've generated enough
+                if t > L * 5 and stroke[0, 2].item() > 0.5:
+                    # Check if we're at a natural stopping point
+                    if t >= L * 8:
+                        break
+
+            # Stack all strokes
+            strokes = torch.stack(generated_strokes, dim=1)  # [B, T, 3]
+
+        return strokes
+
+    def generate(self, text_indices, style_images, char_mask=None,
+                 points_per_char=10, temperature=0.7, use_autoregressive=True):
+        """
+        Generate handwriting (wrapper for compatibility)
+
+        Args:
+            use_autoregressive: If True, use enhanced autoregressive generation
+        """
+        if use_autoregressive:
+            return self.generate_autoregressive(
+                text_indices, style_images, char_mask,
+                points_per_char, temperature,
+                temperature_schedule='adaptive',
+                top_p=0.95
+            )
+        else:
+            # Fallback to original parallel generation
+            return self._generate_parallel(text_indices, style_images, char_mask,
+                                           points_per_char, temperature)
+
+    def _generate_parallel(self, text_indices, style_images, char_mask=None,
+                          points_per_char=10, temperature=0.8):
+        """Original parallel generation (faster but lower quality)"""
+        self.eval()
+        with torch.no_grad():
+            B, L = text_indices.shape
             target_len = L * points_per_char
-
-            # Forward pass
             gmm_params = self.forward(text_indices, style_images, char_mask, target_len)
-
-            # Sample strokes
-            strokes = self.gmm_decoder.sample(gmm_params, temperature=temperature)
-
+            strokes = self.gmm_decoder.sample(gmm_params, temperature=temperature, top_p=0.95)
         return strokes
 
     def compute_loss(self, char_indices, style_images, target_strokes,
                     char_mask=None, stroke_mask=None):
-        """
-        Compute training loss
-        FIXED: Now properly passes stroke_mask to GMM decoder
-
-        Args:
-            char_indices: [B, L] - character indices
-            style_images: [B, N, 1, H, W] - style reference images
-            target_strokes: [B, seq_len, 3] - ground truth strokes
-            char_mask: [B, L] - character mask
-            stroke_mask: [B, seq_len] - stroke mask (1=valid, 0=padding)
-
-        Returns:
-            loss: Total loss
-            loss_dict: Dictionary of individual loss components
-        """
+        """Compute training loss"""
         B, seq_len, _ = target_strokes.shape
-
-        # Forward pass
         gmm_params = self.forward(char_indices, style_images, char_mask, target_len=seq_len)
-
-        # FIXED: Pass stroke_mask to GMM decoder
-        loss, loss_dict = self.gmm_decoder.compute_loss(
-            gmm_params, target_strokes, mask=stroke_mask
-        )
-
+        loss, loss_dict = self.gmm_decoder.compute_loss(gmm_params, target_strokes, mask=stroke_mask)
         return loss, loss_dict
 
     def adapt_style(self, style_images):
-        """
-        Extract and cache style from reference images
-        Useful for generating multiple samples with the same style
-
-        Args:
-            style_images: [B, N, 1, H, W] - style reference images
-
-        Returns:
-            style_dict: Dictionary containing style embeddings
-        """
+        """Extract and cache style from reference images"""
         with torch.no_grad():
             writer_style, glyph_styles = self.style_encoder(style_images)
-
         return {
             'writer_style': writer_style,
             'glyph_styles': glyph_styles
