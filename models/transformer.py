@@ -1,12 +1,14 @@
 """
 Transformer architecture for handwriting synthesis
 Based on Style-Disentangled Transformer (SDT) from CVPR 2023
+FIXED: Layer weight sharing bug - now creates independent layers
 """
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from typing import Optional
 import math
+import copy
 
 
 def _get_activation_fn(activation):
@@ -25,14 +27,14 @@ class PositionalEncoding(nn.Module):
     def __init__(self, d_model, max_len=5000, dropout=0.1):
         super().__init__()
         self.dropout = nn.Dropout(p=dropout)
-        
+
         position = torch.arange(max_len).unsqueeze(1)
         div_term = torch.exp(torch.arange(0, d_model, 2) * (-math.log(10000.0) / d_model))
         pe = torch.zeros(max_len, 1, d_model)
         pe[:, 0, 0::2] = torch.sin(position * div_term)
         pe[:, 0, 1::2] = torch.cos(position * div_term)
         self.register_buffer('pe', pe)
-    
+
     def forward(self, x):
         """
         Args:
@@ -44,27 +46,27 @@ class PositionalEncoding(nn.Module):
 
 class TransformerEncoderLayer(nn.Module):
     """Transformer encoder layer with self-attention"""
-    def __init__(self, d_model, nhead, dim_feedforward=2048, dropout=0.1, 
+    def __init__(self, d_model, nhead, dim_feedforward=2048, dropout=0.1,
                  activation="relu", normalize_before=False):
         super().__init__()
         self.self_attn = nn.MultiheadAttention(d_model, nhead, dropout=dropout)
-        
+
         # Feedforward network
         self.linear1 = nn.Linear(d_model, dim_feedforward)
         self.dropout = nn.Dropout(dropout)
         self.linear2 = nn.Linear(dim_feedforward, d_model)
-        
+
         self.norm1 = nn.LayerNorm(d_model)
         self.norm2 = nn.LayerNorm(d_model)
         self.dropout1 = nn.Dropout(dropout)
         self.dropout2 = nn.Dropout(dropout)
-        
+
         self.activation = _get_activation_fn(activation)
         self.normalize_before = normalize_before
-    
+
     def with_pos_embed(self, tensor, pos: Optional[torch.Tensor]):
         return tensor if pos is None else tensor + pos
-    
+
     def forward(self, src, src_mask=None, src_key_padding_mask=None, pos=None):
         # Self attention
         q = k = self.with_pos_embed(src, pos)
@@ -72,7 +74,7 @@ class TransformerEncoderLayer(nn.Module):
                              key_padding_mask=src_key_padding_mask)[0]
         src = src + self.dropout1(src2)
         src = self.norm1(src)
-        
+
         # Feedforward
         src2 = self.linear2(self.dropout(self.activation(self.linear1(src))))
         src = src + self.dropout2(src2)
@@ -87,25 +89,25 @@ class TransformerDecoderLayer(nn.Module):
         super().__init__()
         self.self_attn = nn.MultiheadAttention(d_model, nhead, dropout=dropout)
         self.multihead_attn = nn.MultiheadAttention(d_model, nhead, dropout=dropout)
-        
+
         # Feedforward network
         self.linear1 = nn.Linear(d_model, dim_feedforward)
         self.dropout = nn.Dropout(dropout)
         self.linear2 = nn.Linear(dim_feedforward, d_model)
-        
+
         self.norm1 = nn.LayerNorm(d_model)
         self.norm2 = nn.LayerNorm(d_model)
         self.norm3 = nn.LayerNorm(d_model)
         self.dropout1 = nn.Dropout(dropout)
         self.dropout2 = nn.Dropout(dropout)
         self.dropout3 = nn.Dropout(dropout)
-        
+
         self.activation = _get_activation_fn(activation)
         self.normalize_before = normalize_before
-    
+
     def with_pos_embed(self, tensor, pos: Optional[torch.Tensor]):
         return tensor if pos is None else tensor + pos
-    
+
     def forward(self, tgt, memory, tgt_mask=None, memory_mask=None,
                 tgt_key_padding_mask=None, memory_key_padding_mask=None,
                 pos=None, query_pos=None):
@@ -115,7 +117,7 @@ class TransformerDecoderLayer(nn.Module):
                              key_padding_mask=tgt_key_padding_mask)[0]
         tgt = tgt + self.dropout1(tgt2)
         tgt = self.norm1(tgt)
-        
+
         # Cross attention
         tgt2 = self.multihead_attn(query=self.with_pos_embed(tgt, query_pos),
                                    key=self.with_pos_embed(memory, pos),
@@ -123,7 +125,7 @@ class TransformerDecoderLayer(nn.Module):
                                    key_padding_mask=memory_key_padding_mask)[0]
         tgt = tgt + self.dropout2(tgt2)
         tgt = self.norm2(tgt)
-        
+
         # Feedforward
         tgt2 = self.linear2(self.dropout(self.activation(self.linear1(tgt))))
         tgt = tgt + self.dropout3(tgt2)
@@ -132,13 +134,23 @@ class TransformerDecoderLayer(nn.Module):
 
 
 class TransformerEncoder(nn.Module):
-    """Stack of N encoder layers"""
+    """
+    Stack of N encoder layers
+    FIXED: Creates independent layer copies instead of sharing weights
+    """
     def __init__(self, encoder_layer, num_layers, norm=None):
         super().__init__()
-        self.layers = nn.ModuleList([encoder_layer for _ in range(num_layers)])
+        # CRITICAL FIX: Create independent copies of the layer
+        # OLD (WRONG): self.layers = nn.ModuleList([encoder_layer for _ in range(num_layers)])
+        # This created a list with the same layer object repeated!
+
+        # NEW (CORRECT): Create deep copies for independent weights
+        self.layers = nn.ModuleList([
+            copy.deepcopy(encoder_layer) for _ in range(num_layers)
+        ])
         self.num_layers = num_layers
         self.norm = norm
-    
+
     def forward(self, src, mask=None, src_key_padding_mask=None, pos=None):
         output = src
         for layer in self.layers:
@@ -150,13 +162,23 @@ class TransformerEncoder(nn.Module):
 
 
 class TransformerDecoder(nn.Module):
-    """Stack of N decoder layers"""
+    """
+    Stack of N decoder layers
+    FIXED: Creates independent layer copies instead of sharing weights
+    """
     def __init__(self, decoder_layer, num_layers, norm=None):
         super().__init__()
-        self.layers = nn.ModuleList([decoder_layer for _ in range(num_layers)])
+        # CRITICAL FIX: Create independent copies of the layer
+        # OLD (WRONG): self.layers = nn.ModuleList([decoder_layer for _ in range(num_layers)])
+        # This created a list with the same layer object repeated!
+
+        # NEW (CORRECT): Create deep copies for independent weights
+        self.layers = nn.ModuleList([
+            copy.deepcopy(decoder_layer) for _ in range(num_layers)
+        ])
         self.num_layers = num_layers
         self.norm = norm
-    
+
     def forward(self, tgt, memory, tgt_mask=None, memory_mask=None,
                 tgt_key_padding_mask=None, memory_key_padding_mask=None,
                 pos=None, query_pos=None):
@@ -172,13 +194,13 @@ class TransformerDecoder(nn.Module):
         return output
 
 
-def build_transformer(d_model=512, nhead=8, num_encoder_layers=2, 
+def build_transformer(d_model=512, nhead=8, num_encoder_layers=2,
                      num_decoder_layers=6, dim_feedforward=2048, dropout=0.1):
     """Build a complete transformer model"""
     encoder_layer = TransformerEncoderLayer(d_model, nhead, dim_feedforward, dropout)
     encoder = TransformerEncoder(encoder_layer, num_encoder_layers)
-    
+
     decoder_layer = TransformerDecoderLayer(d_model, nhead, dim_feedforward, dropout)
     decoder = TransformerDecoder(decoder_layer, num_decoder_layers)
-    
+
     return encoder, decoder
