@@ -1,1 +1,12 @@
-/.venv311/
+# Virtual Environments
+.venv/
+.venv311/
+venv/
+env/
+ENV/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
