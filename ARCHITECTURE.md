@@ -119,10 +119,10 @@ OUTPUT PHASE
          │  │  Linear Layer            │         │
          │  │  [d_model → output_dim]  │         │
          │  └──────────┬───────────────┘         │
-         │             │                          │
-         │             ▼                          │
+         │             │                         │
+         │             ▼                         │
          │  Split into GMM Parameters:           │
-         │                                        │
+         │                                       │
          │  ┌─ π (mixture weights)    [M]        │
          │  ├─ μ (means x,y)          [M×2]      │
          │  ├─ σ (std devs x,y)       [M×2]      │
@@ -162,7 +162,7 @@ OUTPUT PHASE
                     │
                     ▼
          ┌──────────────────────────┐
-         │  📄 OUTPUT.SVG           │
+         │  OUTPUT.SVG           │
          │  Vector Handwriting      │
          └──────────────────────────┘
 
@@ -274,9 +274,3 @@ Repeat for 100+ epochs
 5. SAVE
    └─ Write to output.svg
 ```
-
----
-
-This architecture achieves state-of-the-art handwriting synthesis quality
-by combining modern deep learning techniques with domain-specific insights
-from handwriting analysis.

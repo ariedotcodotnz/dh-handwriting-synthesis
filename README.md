@@ -373,31 +373,9 @@ If you use this code in your research, please cite the relevant papers:
 }
 ```
 
-## Contributing
-
-Contributions are welcome! Areas for improvement:
-
-- Support for more datasets (CASIA, etc.)
-- Real-time generation optimization
-- Style interpolation between writers
-- Mobile/web deployment
-- Better style extraction from images
-
-## License
-
-This project is for research and educational purposes. Please check individual paper licenses for commercial use.
-
 ## Acknowledgments
 
 This implementation builds upon research from:
 - Alex Graves (DeepMind) - Original RNN handwriting synthesis
 - ETH Zurich - DeepWriting project
 - CVPR 2023 - Style-Disentangled Transformer
-
-## Contact
-
-For questions or issues, please open a GitHub issue or contact [your-email].
-
----
-
-**Note**: This model generates synthetic handwriting. While outputs are realistic, they should not be used to forge signatures or documents. Use responsibly and ethically.
